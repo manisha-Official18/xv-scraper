@@ -1,0 +1,26 @@
+{
+  "name": "xv-scraper",
+  "version": "1.0.0",
+  "description": "Simple XVideos scraper for video info and search using axios and cheerio.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node example.js"
+  },
+  "keywords": [
+    "xvideos",
+    "scraper",
+    "video",
+    "adult",
+    "metadata",
+    "axios",
+    "cheerio"
+  ],
+  "author": "manaofc",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "latest",
+    "cheerio": "latest",
+    "he": "latest"
+  }
+}
