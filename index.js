@@ -83,7 +83,7 @@ async function xsearch(query, page = 0) {
   if (!query || typeof query !== "string") {
     throw new TypeError("'query' is missing or not a string");
   }
-  const url = `${BASE_URL}/k/${encodeURIComponent(query)}/${page}`;
+  const url = `${BASE_URL}/?k=${encodeURIComponent(query)}/${page}`;
   const { data } = await axios.get(url, { headers });
   const $ = cheerio.load(data);
   const allLinks = $(".thumb-inside .thumb a").toArray();
